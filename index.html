@@ -19,7 +19,7 @@
         }
 
         header {
-            background: url('./assets/ha.jpg') no-repeat center center;
+            background: url('https://via.placeholder.com/1500x500') no-repeat center center;
             background-size: cover;
             color: white;
             padding: 60px 20px;
@@ -44,20 +44,7 @@
             margin-top: 10px;
         }
 
-        .toggle-theme {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            background-color: #333;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-            border-radius: 5px;
-            font-size: 1em;
-            z-index: 1000;
-        }
-
+        /* Dark mode styles */
         .dark-mode {
             background-color: #121212;
             color: white;
@@ -69,20 +56,38 @@
             color: white;
         }
 
-        .dark-mode .toggle-theme {
-            background-color: #555;
-        }
-
         .dark-mode .navbar-light {
             background-color: #1e1e1e;
         }
 
         .dark-mode .navbar-light .navbar-nav .nav-link {
-            color: #000000;
+            color: #ddd;
         }
 
         .dark-mode .navbar-light .navbar-nav .nav-link:hover {
             color: #a777e3;
+        }
+
+        .dark-mode .card {
+            background-color: #1e1e1e;
+            color: #ddd;
+        }
+
+        .dark-mode .card-title {
+            color: #a777e3;
+        }
+
+        .dark-mode .section h2 {
+            color: #ddd;
+        }
+
+        .dark-mode footer {
+            background-color: #333;
+            border-top: none;
+        }
+
+        .dark-mode .footer-text {
+            color: #aaa;
         }
 
         .content-container {
@@ -117,15 +122,6 @@
             font-weight: 600;
         }
 
-        .dark-mode .card {
-            background-color: #1e1e1e;
-            color: #ddd;
-        }
-
-        .dark-mode .card-title {
-            color: #a777e3;
-        }
-
         .section {
             padding: 60px 20px;
         }
@@ -137,10 +133,6 @@
             color: #333;
         }
 
-        .dark-mode .section h2 {
-            color: #ddd;
-        }
-
         footer {
             text-align: center;
             padding: 20px;
@@ -148,19 +140,10 @@
             border-top: 1px solid #ddd;
         }
 
-        .dark-mode footer {
-            background-color: #333;
-            border-top: none;
-        }
-
         .footer-text {
             margin: 0;
             font-size: 0.9em;
             color: #777;
-        }
-
-        .dark-mode .footer-text {
-            color: #aaa;
         }
 
         .navbar-nav a {
@@ -237,8 +220,6 @@
         <button class="hero-button">Get in Touch</button>
     </header>
 
-    <button class="toggle-theme" onclick="toggleTheme()">Toggle Dark Mode</button>
-
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#"> </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -278,7 +259,7 @@
             <div class="row">
                 <div class="col-md-6" data-aos="fade-right">
                     <div class="card">
-                        <img src="./assets/ha.jpg" class="card-img-top" alt="Project 1">
+                        <img src="https://via.placeholder.com/500x300" class="card-img-top" alt="Project 1">
                         <div class="card-body">
                             <h5 class="card-title">Project 1</h5>
                             <p class="card-text">Description of Project 1.</p>
@@ -287,7 +268,7 @@
                 </div>
                 <div class="col-md-6" data-aos="fade-left">
                     <div class="card">
-                        <img src="./assets/ha.jpg" class="card-img-top" alt="Project 2">
+                        <img src="https://via.placeholder.com/500x300" class="card-img-top" alt="Project 2">
                         <div class="card-body">
                             <h5 class="card-title">Project 2</h5>
                             <p class="card-text">Description of Project 2.</p>
@@ -315,7 +296,7 @@
             <div class="row">
                 <div class="col-md-6" data-aos="fade-right">
                     <div class="card">
-                        <img src="./assets/ha.jpg" class="card-img-top" alt="Showcase Project 1">
+                        <img src="https://via.placeholder.com/500x300" class="card-img-top" alt="Showcase Project 1">
                         <div class="card-body">
                             <h5 class="card-title">Showcase Project 1</h5>
                             <p class="card-text">Details about Showcase Project 1.</p>
@@ -324,7 +305,7 @@
                 </div>
                 <div class="col-md-6" data-aos="fade-left">
                     <div class="card">
-                        <img src="./assets/ha.jpg" class="card-img-top" alt="Showcase Project 2">
+                        <img src="https://via.placeholder.com/500x300" class="card-img-top" alt="Showcase Project 2">
                         <div class="card-body">
                             <h5 class="card-title">Showcase Project 2</h5>
                             <p class="card-text">Details about Showcase Project 2.</p>
@@ -345,10 +326,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script>
-        function toggleTheme() {
-            document.body.classList.toggle('dark-mode');
-        }
-
         AOS.init({
             duration: 1200, // Animation duration
         });
