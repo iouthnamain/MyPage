@@ -100,3 +100,8 @@ nav .links a:hover {
 .page {
    /* padding: 20px; */
 }
+
+nav .links a.active,
+nav .links a:hover {
+    color: #aaa;
+}
