@@ -67,11 +67,23 @@ nav .links a:hover {
    gap: 10px;
 }
 
-.footer-nav .img {
+.footer-nav .social-icon {
    width: 40px;
    height: 40px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
    background-color: #555;
    border-radius: 50%;
+   color: #fff;
+   text-decoration: none;
+   font-size: 1.5em;
+   transition: background-color 0.3s, color 0.3s;
+}
+
+.footer-nav .social-icon:hover {
+   background-color: #777;
+   color: #ddd;
 }
 
 .reveal {
@@ -83,4 +95,8 @@ nav .links a:hover {
        opacity: 1;
        transform: translateY(0);
    }
+}
+
+.page {
+   padding: 20px;
 }
