@@ -35,7 +35,7 @@ nav .links a:hover {
    display: flex;
    justify-content: center;
    align-items: center;
-   height: 80vh;
+   height: 77vh;
    text-align: center;
    background-color: #fff;
    color: #333;
@@ -98,5 +98,5 @@ nav .links a:hover {
 }
 
 .page {
-   padding: 20px;
+   /* padding: 20px; */
 }
