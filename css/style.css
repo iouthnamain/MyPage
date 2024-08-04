@@ -140,14 +140,18 @@ html, body {
     .image-column,
     .form-column {
       width: 100%;
+      
     }
   
     .contact-image {
       height: 300px;
+      
     }
   
     .contact-title {
       font-size: 40px;
     }
+
+    
   }
   
