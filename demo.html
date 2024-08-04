@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page Reveal Animation</title>
+    <link rel="stylesheet" href="./css/stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Add loader here if needed -->
+    </div>
+    <div class="site-content">
+        <nav>
+            <div class="logo">
+                <a href="#" onclick="showPage('home')">Chỗ này đợi kiếm font xịn</a>
+            </div>
+            <div class="links">
+                <a href="#" class="active">Home</a>
+                <a href="./html/About.html">About</a> 
+                <a href="./html/Work.html">Work</a>
+            </div>
+        </nav>
+        <div id="home" class="page">
+            <div class="header">
+                <h1 class="reveal">C</h1>
+                <h1 class="reveal">H</h1>
+                <h1 class="reveal">Ữ</h1>
+                <h1 class="reveal"></h1>
+                <h1 class="reveal"></h1>
+                <h1 class="reveal"></h1>
+                <h1 class="reveal">T</h1>
+                <h1 class="reveal">O</h1>
+                <h1 class="reveal"></h1>
+                <h1 class="reveal"></h1>
+                <h1 class="reveal"></h1>
+                <h1 class="reveal">Đ</h1>
+                <h1 class="reveal">Ù</h1>
+                <h1 class="reveal">N</h1>
+                <h1 class="reveal">G</h1>
+            </div>
+        </div>
+         
+         
+         
+        <footer>
+            <div class="footer-copy">
+                <div>
+                    <p>
+                        Thêm tí thông tin dưới này
+                    </p>
+                </div> 
+                <div>
+                    <p>
+                        Thêm phần details nữa đê:                
+                    </p>
+                    <ul>
+                        <li>Detail 1</li>
+                        <li>Detail 2</li>
+                        <li>Detail 3</li>
+                      </ul>
+                </div>
+                <div>
+                    <p>More details thìa ấn vào</p>
+                </div>
+                <div>
+                    <p>
+                        Thêm phần summary nữa là đẹp
+                     </p>
+                </div>
+
+                <div>
+                    <p>
+                        Thêm dòng nữa để đây cho vui
+                    </p>
+                </div>
+                 
+            </div>
+            <div class="footer-nav">
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-google"></i></a>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script>
+        function showPage(pageId) {
+            const pages = document.querySelectorAll('.page');
+            pages.forEach(page => {
+                page.style.display = 'none';
+            });
+            document.getElementById(pageId).style.display = 'block';
+        }
+
+        window.addEventListener('DOMContentLoaded', (event) => {
+            document.querySelectorAll('.reveal').forEach((element, index) => {
+                element.style.animationDelay = `${index * 0.1}s`;
+            });
+        });
+    </script>
+</body>
+</html>
